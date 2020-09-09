@@ -22,10 +22,10 @@ public class StockPrice {
             	}else {
             		
             		answer[i]=1+second;
-            	
+              
             	}
             	
-            	second++;
+            	  	second++;
         		
         	}
 
