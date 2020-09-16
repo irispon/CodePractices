@@ -16,3 +16,4 @@
 *.ipch
 *.db
 *.suo
+*.class
