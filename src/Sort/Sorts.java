@@ -2,7 +2,7 @@ package Sort;
 
 public class Sorts {
 
-	static void SelectSort(double[] data) 
+	static public void SelectSort(double[] data) 
 	{
 		int pivot=-1;
 		double tmp;
@@ -35,7 +35,7 @@ public class Sorts {
 	}
 	
 	
-	static void InstertSort(double[] data) 
+	static public void InstertSort(double[] data) 
 	{
 
 
@@ -68,8 +68,41 @@ public class Sorts {
 		
 	}
 	
+	static public void InstertSort(Comparable[] data,int begin,int end) 
+	{
+
+
+		Comparable key;
+		int j;
+		
+		for(int i =begin;i<end+1;i++) 		
+		{
 	
-	static void ShellShort(double[] data) {
+			key = data[i];
+			for(j =i-1;j>=0;j--) 
+			{
+				if(data[j].compareTo(key)>0) 
+				{
+					data[j+1] = data[j];
+					
+					
+				}else {
+					
+					break;
+				}
+				
+				
+				
+			}
+			
+			data[j+1]=key;
+			
+		}
+		
+	}
+	
+	
+	static public void ShellShort(double[] data) {
 		int h =1;
 		double tmp;
 		double key;
@@ -108,7 +141,7 @@ public class Sorts {
 
 	
 	
-	static void Check(double[] data) //정렬 확인하는 함수
+	static public void Check(double[] data) //정렬 확인하는 함수
 	{
 		for(int i =0;i<10;i++) {
 			
