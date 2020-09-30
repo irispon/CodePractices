@@ -5,32 +5,32 @@
 
 void ToUpper(char*);//문자열을 대문자로 변경하는 함수입니다.
 int IsPalindrome(char*);//회문 여부를 구분하는 함수입니다.
-int main(void)
-{
-
-	char string[100]="";
-	printf("문자열을 입력하세요: ");
-    gets_s(string,100);
-	printf("%s \n", string); 
-	
-    
-    ToUpper(string);
-
-    printf("문자열 확인: %s \n", string);
-
-    if (IsPalindrome(string)) 
-    {
-        printf("\n회문 입니다.");
-
-    }
-    else
-    {
-
-        printf("\n회문이 아닙니다.");
-    }
-
-	return 0;
-}
+//int main(void)
+//{
+//
+//	char string[100]="";
+//	printf("문자열을 입력하세요: ");
+//    gets_s(string,100);
+//	printf("%s \n", string); 
+//	
+//    
+//    ToUpper(string);
+//
+//    printf("문자열 확인: %s \n", string);
+//
+//    if (IsPalindrome(string)) 
+//    {
+//        printf("\n회문 입니다.");
+//
+//    }
+//    else
+//    {
+//
+//        printf("\n회문이 아닙니다.");
+//    }
+//
+//	return 0;
+//}
 
 
 

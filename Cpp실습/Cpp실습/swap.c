@@ -12,34 +12,34 @@ typedef struct scores {
 void convert(double* grades, scores *scores, int size);
 
 
-int main(void)
-{
-	double grades[] = {4.2,3.5,2.2,2.7,4.0,3.0,2.5,2.5,2.5,2.8};
-	//grades의 선언 부분입니다.
-
-
-
-	scores score;
-	
-
-	int size = sizeof(grades) / sizeof(double);
-	
-	printf("gradeSize %d\n", size);
-
-	convert(grades, &score, size);
-
-	int i = 0;
-
-	printf("변경후: ");
-	for (; i < score.size; i++) {
-
-		printf("%f  ",(score.scores[i]));
-
-	}
-
-	free(score.scores);
-	return 0;
-}
+//int main(void)
+//{
+//	double grades[] = {4.2,3.5,2.2,2.7,4.0,3.0,2.5,2.5,2.5,2.8};
+//	//grades의 선언 부분입니다.
+//
+//
+//
+//	scores score;
+//	
+//
+//	int size = sizeof(grades) / sizeof(double);
+//	
+//	printf("gradeSize %d\n", size);
+//
+//	convert(grades, &score, size);
+//
+//	int i = 0;
+//
+//	printf("변경후: ");
+//	for (; i < score.size; i++) {
+//
+//		printf("%f  ",(score.scores[i]));
+//
+//	}
+//
+//	free(score.scores);
+//	return 0;
+//}
 
 
 void convert(double* grades, scores *scores, int size)

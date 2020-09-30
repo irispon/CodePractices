@@ -70,11 +70,7 @@ public class MergeSort {
 			 
 			 arr[t] = aux[t];
 		 }
-
-		
-
-		
-		
+	
 	}
 	
 
