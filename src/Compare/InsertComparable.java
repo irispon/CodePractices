@@ -38,6 +38,6 @@ public class InsertComparable<T extends Comparable<T>> {
 	private boolean less(T o,T w) {
 		
 		
-		return o.compareTo(w)<0;
+		return o.compareTo(w)>0;
 	}
 }
