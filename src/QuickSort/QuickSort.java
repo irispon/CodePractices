@@ -14,7 +14,10 @@ public class QuickSort<T extends Comparable<T>> {
 
 	
 public void sort(T[] elements,int low,int high) {
-
+	if(high<=low+CUTOFF-1)
+	{
+		new InsertComparable<T>().sort(elements);//개선 1
+	}
 	if(high<=low) return;
 //	int j = partition(elements, low, high);
 	int j = medianOf3(elements,low,low+(high-low)/2,high);
@@ -25,10 +28,7 @@ public void sort(T[] elements,int low,int high) {
 }
 
 private int partition(T[] elements,int low,int high) {
-	if(high<=low+CUTOFF-1)
-	{
-		new InsertComparable<T>().sort(elements);//개선 1
-	}
+
 	int i = low, j=high +1;
 	T v =elements[low];
 	

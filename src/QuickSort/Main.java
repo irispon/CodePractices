@@ -31,9 +31,7 @@ public class Main {
 			System.out.print(d+" ");
 		}
 		
-		
-		Shuffle.suffle(random);//Knuth shuffle »ç¿ë
-		ArrayList<Character> select =sort.selects(random, 4);
+
 
 		
 	}
